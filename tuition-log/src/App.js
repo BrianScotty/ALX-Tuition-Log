@@ -1,11 +1,11 @@
 import Header from './components/Header'
 
-function App() {
-  return (
-    <div className="container">
-      <Header />
-    </div>
-  );
+const App = () => {
+   return (
+     <div className='container'>
+       <Header title='Smart Steps Tutoring' />
+      </div>
+  )
 }
 
-export default App;
+export default App
