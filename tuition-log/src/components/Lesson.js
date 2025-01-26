@@ -1,10 +1,16 @@
 import { FaTimes } from 'react-icons/fa'
 
-const Lesson = ({ lesson, onDelete }) => {
+const Lesson = ({ lesson, onDelete, onToggle }) => {
     return (
-      <div className='lesson'>
+        <div className={`lesson ${lesson.reminder ? 'reminder' : ''}`}
+            onDoubleClick={() => onToggle(lesson.id)}
+        >
             <h3>
-                {lesson.text} <FaTimes style={{ color: 'red' }} onClick={() => onDelete(lesson.id)} />
+                {lesson.text}{' '}
+                <FaTimes
+                    style={{ color: 'red' }}
+                    onClick={() => onDelete(lesson.id)}
+                />
             </h3>
             <p>{lesson.day}</p>
       </div>
