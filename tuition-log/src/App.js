@@ -17,10 +17,16 @@ const App = () => {
             reminder: false,
         },
     ])
+
+    // Delete Lesson
+    const deleteLesson = (id) => {
+        setLessons(lessons.filter((lesson) => lesson.id !== id))
+    }
+
    return (
      <div className='container'>
        <Header title= 'Smart Steps Tuition' />
-           <Lessons lessons={lessons} />
+       {lessons.length > 0 ? ( <Lessons lessons={lessons} onDelete={deleteLesson} /> ) : ( 'No Lessons' )}
       </div>
   )
 }
