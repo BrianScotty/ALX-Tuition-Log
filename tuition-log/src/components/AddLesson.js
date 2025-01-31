@@ -26,7 +26,7 @@ const AddLesson = ({ onAdd }) => {
                 <label>Lesson</label>
                 <input
                     type='text'
-                    placeholder='Add Task'
+                    placeholder='Add Name, Subject & Grade'
                     value={text}
                     onChange={(e) => setText(e.target.value)}
                 />

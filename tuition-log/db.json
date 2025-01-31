@@ -1,0 +1,16 @@
+{
+  "lessons": [
+    {
+      "id": "1",
+      "text": "Jaden Maths grade 12",
+      "day": "Thursdays @ 4pm",
+      "reminder": true
+    },
+    {
+      "id": "b39b",
+      "text": "Katleho Physics Grade 9",
+      "day": "Tuesdays @ 5pm",
+      "reminder": true
+    }
+  ]
+}
